@@ -1,0 +1,30 @@
+{
+  "homepage": "http://NickEllis212.github.io/pcpowershop",
+  "name": "pcpower",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "nodemon --watch backend --exec node -- experimental-modules backend/server.js ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+   
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase-tools": "^9.7.0",
+    "react-icons": "^4.1.0",
+    "react-scroll": "^1.8.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "gh-pages": "^3.1.0",
+    "nodemon": "^2.0.7"
+  }
+}
